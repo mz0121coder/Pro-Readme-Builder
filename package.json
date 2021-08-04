@@ -1,0 +1,19 @@
+{
+  "name": "pro-readme-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mz0121coder/Pro-Readme-Builder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mz0121coder/Pro-Readme-Builder/issues"
+  },
+  "homepage": "https://github.com/mz0121coder/Pro-Readme-Builder#readme"
+}
