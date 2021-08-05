@@ -73,3 +73,8 @@ const questions = [
         name: "email",
       },
     ];
+//prompt user for responses
+    function promptUser() {
+        return inquirer.prompt(questions);
+      }
+      
