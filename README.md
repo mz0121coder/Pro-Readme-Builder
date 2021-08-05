@@ -27,7 +27,8 @@ The license is MIT License.
 Read more about it at https://opensource.org/licenses/MIT.
 
 ## Credits
-Knowledge of Node.js gained so far.
+Knowledge of [Node.js](https://nodejs.org/en/) gained so far.
+[Clideo](https://clideo.com/) online video editor.
 
 ## Tests
 No tests for this application.
@@ -35,3 +36,7 @@ No tests for this application.
 ## Questions
 If you have additional questions, please contact me at mzcoder7@gmail.com.
 GitHub: https://github.com/mz0121coder
+
+## Walkthrough Video
+[Example in VS Code](./assets/Pro-Readme-Builder-demo.mp4)
+[DEMO README generated](./assets/DEMO-README.mp4)
