@@ -66,7 +66,7 @@ function generateMarkdown(response) {
       }
       return `# ${response.title} ![GitHub license](https://img.shields.io/badge/license-${spaceTitle}-blue.svg)
 
-# Main URL
+# Live URL
 ${response.url}
 
 ## Project Description 
