@@ -73,8 +73,12 @@ const questions = [
         name: "email",
       },
     ];
-//prompt user for responses
+//Prompt user for responses
     function promptUser() {
         return inquirer.prompt(questions);
       }
-      
+   //Await responses
+      async function init() {
+        try {
+          const response = await promptUser();    
+          
