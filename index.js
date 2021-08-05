@@ -73,15 +73,23 @@ const questions = [
         name: "email",
       },
     ];
-//Prompt user for responses
+// Prompt user for responses
     function promptUser() {
         return inquirer.prompt(questions);
       }
-   //Await responses
+   // Await responses
       async function init() {
         try {
           const response = await promptUser();    
-       //Generate result based on responses
+       // Generate result based on responses
           const readMeText = generateMarkdown(response);
-          //Write to DEMO-README.md
+          // Write to DEMO-README.md
           await writeFileAsync("DEMO-README.md", readMeText);
+        // Log message when file is generated
+          console.log("Successfully written responses to DEMO-README.md");
+        } catch (err) {
+          console.log(err);
+        }
+      }
+      
+      init();
