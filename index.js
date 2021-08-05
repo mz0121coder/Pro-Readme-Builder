@@ -62,3 +62,14 @@ const questions = [
         ],
         name: "license",
       },
+      {
+        type: "input",
+        message: "What is your GitHub username?",
+        name: "github",
+      },
+      {
+        type: "input",
+        message: "What is your email address?",
+        name: "email",
+      },
+    ];
