@@ -58,3 +58,11 @@ const licenseArray = [
 function generateMarkdown(response) {
     let spaceTitle = response.license.replace(/ /g, "%20");
     let licenseLink = "";
+
+    for (var i = 0; i < licenseArray.length; i++) {
+        if (response.license === licenseArray[i].name) {
+          licenseLink = licenseArray[i].link;
+        }
+      }
+      return `# ${response.title} ![GitHub license](https://img.shields.io/badge/license-${spaceTitle}-blue.svg)
+      
