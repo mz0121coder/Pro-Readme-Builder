@@ -53,3 +53,8 @@ const licenseArray = [
       link: "https://unlicense.org/",
     },
   ];
+
+  // generate markdown for README file
+function generateMarkdown(response) {
+    let spaceTitle = response.license.replace(/ /g, "%20");
+    let licenseLink = "";
