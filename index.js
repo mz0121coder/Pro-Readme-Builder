@@ -81,4 +81,7 @@ const questions = [
       async function init() {
         try {
           const response = await promptUser();    
-          
+       //Generate result based on responses
+          const readMeText = generateMarkdown(response);
+          //Write to DEMO-README.md
+          await writeFileAsync("DEMO-README.md", readMeText);
