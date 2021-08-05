@@ -71,3 +71,37 @@ ${response.url}
 
 ## Project Description 
 ${response.description}
+
+## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Credits](#credits)
+* [Tests](#tests)
+* [Questions](#questions)
+
+## Installation
+${response.installation}
+
+## Usage 
+${response.usage}
+
+## License
+Copyright (c) [2021]
+The license is ${response.license}. 
+Read more about it at ${licenseLink}.
+
+## Credits
+${response.credits}
+
+## Tests
+${response.tests}
+
+## Questions
+If you have additional questions, please contact me at ${response.email}.
+GitHub: https://github.com/${response.github}
+`;
+}
+
+module.exports = generateMarkdown;
