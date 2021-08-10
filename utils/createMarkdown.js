@@ -1,5 +1,5 @@
 // add license array
-const licenseArray = [
+const licenseChoices = [
     {
       name: "Apache License 2.0",
       link: "https://www.apache.org/licenses/LICENSE-2.0.txt",
@@ -56,15 +56,15 @@ const licenseArray = [
 
   // generate markdown for README file
 function generateMarkdown(response) {
-    let spaceTitle = response.license.replace(/ /g, "%20");
-    let licenseLink = "";
+    let licenseResponse = response.license.replace(/ /g, "%25");
+    let licenseURL = "";
 
-    for (var i = 0; i < licenseArray.length; i++) {
-        if (response.license === licenseArray[i].name) {
-          licenseLink = licenseArray[i].link;
+    for (var i = 0; i < licenseChoices.length; i++) {
+        if (response.license === licenseChoices[i].name) {
+          licenseURL = licenseChoices[i].link;
         }
       }
-      return `# ${response.title} ![GitHub license](https://img.shields.io/badge/license-${spaceTitle}-blue.svg)
+      return `# ${response.title} ![GitHub license](https://img.shields.io/badge/license-${licenseResponse}-blue.svg)
 
 # Live URL
 ${response.url}
@@ -90,7 +90,7 @@ ${response.usage}
 ## License
 Copyright (c) [2021]
 The license is ${response.license}. 
-Read more about it at ${licenseLink}.
+Read more about it at ${licenseURL}.
 
 ## Credits
 ${response.credits}
