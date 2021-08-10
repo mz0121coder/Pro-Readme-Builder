@@ -2,7 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
-const createMarkdown = require("./utils/createMarkdown");
+const createMarkdown = require("./assets/createMarkdown");
 // Write file async for promises based on successful user responses
 const writeFileAsync = util.promisify(fs.writeFile);
 // Start questions array
