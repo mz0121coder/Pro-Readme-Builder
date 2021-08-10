@@ -2,11 +2,11 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
-const generateMarkdown = require("./utils/generateMarkdown");
+const createMarkdown = require("./utils/createMarkdown");
 // Write file async for promises based on successful user responses
 const writeFileAsync = util.promisify(fs.writeFile);
 // Start questions array
-const questions = [
+const choices = [
     {
       type: "input",
       message: "What is the title of your project?",
@@ -75,14 +75,14 @@ const questions = [
     ];
 // Prompt user for responses
     function promptUser() {
-        return inquirer.prompt(questions);
+        return inquirer.prompt(choices);
       }
    // Await responses
       async function init() {
         try {
           const response = await promptUser();    
        // Generate result based on responses
-          const readMeText = generateMarkdown(response);
+          const readMeText = createMarkdown(response);
           // Write to DEMO-README.md
           await writeFileAsync("DEMO-README.md", readMeText);
         // Log message when file is generated

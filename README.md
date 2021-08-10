@@ -37,6 +37,6 @@ No tests for this application.
 If you have additional questions, please contact me at mzcoder7@gmail.com.
 GitHub: https://github.com/mz0121coder
 
-## Walkthrough Video
+## Walkthrough Videos
 [Example of how to use in VS Code](./assets/Pro-Readme-Builder-demo.mp4)    
 [Example of the README generated](./assets/DEMO-README.mp4)
